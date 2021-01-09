@@ -1,0 +1,51 @@
+POST http://localhost:8000/users/user
+Content-Type: application/json
+
+{
+   "username":"Justkin",
+   "first_name":"just",
+   "last_name":"bin",
+   "email":"just@kin.com",
+   "latitude":"26.123454321234543",
+   "longitude":"78.123454321234543",
+   "password":"gogogogo",
+   "socket_id":"kugafkdsugsdfsd_Sdf"
+}
+
+
+###
+GET http://localhost:8000/users/getusers
+
+
+###
+
+POST http://localhost:8000/users/locationupdate
+Content-Type: application/json
+
+{
+   "email":"just@kin.com",
+   "latitude":"26.00000000011110000",
+   "longitude":"78.000000000000000"
+}
+
+###
+
+POST http://localhost:8000/users/socketupdate
+Content-Type: application/json
+
+{
+   "email":"just@kin.com",
+   "socket_id":"khgkhdjatinjatinjatin"
+}
+
+
+###
+
+POST http://localhost:8000/api/users/login
+Content-Type: application/json
+
+{
+   "email":"just@kin.com",
+   "password":"gogogogo"
+}
+
